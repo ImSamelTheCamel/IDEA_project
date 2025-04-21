@@ -1,0 +1,106 @@
+/* transcript.css */
+
+/* General Page Styles */
+.transcript {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .transcript h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  /* Conversation List */
+  .transcript ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Individual Message Styles */
+  .transcript li {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* User Message */
+  .transcript .message.user {
+    background-color: #e3f2fd; /* Light blue for user messages */
+    align-items: flex-start;
+  }
+  
+  /* AI Message */
+  .transcript .message.ai {
+    background-color: #fff3e0; /* Light orange for AI messages */
+    align-items: flex-start;
+  }
+  
+  /* Message Content */
+  .transcript strong {
+    font-weight: bold;
+    color: #1976d2; /* Blue for speaker names */
+    margin-bottom: 5px;
+  }
+  
+  .transcript p {
+    margin: 0;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Loading and Error States */
+  .loading {
+    text-align: center;
+    font-size: 18px;
+    color: #999;
+  }
+  
+  .error {
+    color: red;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 600px) {
+    .transcript {
+      padding: 10px;
+    }
+  
+    .transcript h2 {
+      font-size: 20px;
+    }
+  
+    .transcript li {
+      font-size: 14px;
+    }
+  }
+  
+  /* transcript.css */
+
+.download-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .download-btn:hover {
+    background-color: #0d47a1;
+  }
+  

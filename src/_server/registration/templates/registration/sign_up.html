@@ -1,0 +1,35 @@
+{% extends "registration/base.html" %}
+
+{% block content %}
+<form action="/registration/sign_up/" method="post">
+  {% csrf_token %}
+  <div class="container">
+    <h1>Welcome!</h1>
+    <div>
+      <label>
+        First Name
+        <input type="text" name="first_name" placeholder="Tyler">
+      </label>
+    </div>
+    <div>
+      <label>
+        Last Name
+        <input type="text" name="last_name" placeholder="Bodily">
+      </label>
+    </div>
+    <div>
+      <label>
+        Email
+        <input type="email" name="email" placeholder="a02356369@aggies.usu.edu">
+      </label>
+    </div>
+    <div>
+      <label>
+        Password
+        <input type="password" name="password">
+      </label>
+    </div>
+    <button>Create Account</button>
+  </div>
+</form>
+{% endblock %}

@@ -1,0 +1,94 @@
+.upload-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .upload-container h2 {
+    color: #004080;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .upload-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .upload-container input[type="file"] {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .upload-container button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #004080;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .upload-container button:hover {
+    background-color: #0066cc;
+  }
+  
+  .upload-status {
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: #333;
+  }
+
+  .success-actions {
+    margin-top: 20px;
+}
+
+.chat-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #3498db;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.chat-button:hover {
+    background-color: #2980b9;
+}
+  
+
+.loading-spinner {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.2);
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

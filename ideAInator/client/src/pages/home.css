@@ -1,0 +1,109 @@
+General container
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(255, 255, 255);
+}
+
+.container {
+  max-width: 600px;
+  width: 95%;
+  margin: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Banner with welcome text */
+.banner {
+  width: 100%;
+  background: linear-gradient(to right, #0F2439, #0F2439);
+  text-align: center;
+}
+
+.welcomeText {
+  font-size: 2.5rem;
+  color: #fff;
+  margin: 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Content below the banner */
+.content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blurb {
+  font-size: 1rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Dropdown selectors */
+.selectorContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.label {
+  font-size: 1rem;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 300px;
+}
+
+.select {
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  width: 100%;
+}
+
+/* Buttons */
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.mainButton,
+.logoutButton {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+}
+
+.mainButton {
+  background-color: #165A7D;
+}
+
+.mainButton:hover {
+  background-color: #0F2439;
+}
